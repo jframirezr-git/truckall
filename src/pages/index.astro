@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Acarreos - TuCamión">
+  <Navbar />
+  <main>
+    <Hero />
+    <Services />
+    <!-- Sección contacto rápida -->
+    <section id="contacto" class="max-w-3xl mx-auto px-6 py-16 text-center">
+  <h2 class="text-3xl font-bold text-slate-800">Contacta y Cotiza</h2>
+  <p class="mt-3 text-slate-600">
+    Envíanos la información: origen, destino y lo que vas a trasladar.
+  </p>
+
+  <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-6">
+    <!-- Facebook -->
+    <a
+      href="https://facebook.com"
+      target="_blank"
+      class="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-md hover:bg-blue-700 transition flex items-center gap-2 min-w-[160px] justify-center"
+    >
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+        <path
+          d="M22 12.073C22 6.505 17.523 2 12 2S2 6.505 2 12.073C2 17.093 5.657 21.245 10.438 22v-6.987H7.898v-2.94h2.54V9.845c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.774-1.63 1.562v1.875h2.773l-.443 2.94h-2.33V22C18.343 21.245 22 17.093 22 12.073"
+        />
+      </svg>
+      <span>Facebook</span>
+    </a>
+
+    <!-- WhatsApp -->
+    <a
+      href="https://wa.me/573000000000"
+      target="_blank"
+      class="bg-green-500 text-white px-6 py-3 rounded-xl shadow-md hover:bg-green-600 transition flex items-center gap-2 min-w-[160px] justify-center"
+    >
+      <span>WhatsApp</span>
+    </a>
+
+    <!-- Instagram --> <a href="https://instagram.com" target="_blank" class="bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-white px-5 py-3 rounded-xl shadow hover:opacity-90 transition flex items-center space-x-2" > <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"> <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.5.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.4 1.3.5 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.5 2.5a3.7 3.7 0 01-1 1.5c-.5.5-.9.8-1.5 1-.5.2-1.3.4-2.5.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.5a3.7 3.7 0 01-1.5-1 3.7 3.7 0 01-1-1.5c-.2-.5-.4-1.3-.5-2.5-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-2 .5-2.5a3.7 3.7 0 011-1.5c.5-.5.9-.8 1.5-1 .5-.2 1.3-.4 2.5-.5C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-.9.1-1.5.2-1.9.4-.5.2-.8.4-1.1.8-.4.3-.6.7-.8 1.1-.2.4-.3 1-.4 1.9-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1.9.2 1.5.4 1.9.2.5.4.8.8 1.1.3.4.7.6 1.1.8.4.2 1 .3 1.9.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c.9-.1 1.5-.2 1.9-.4.5-.2.8-.4 1.1-.8.4-.3.6-.7.8-1.1.2-.4.3-1 .4-1.9.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-.9-.2-1.5-.4-1.9a2.8 2.8 0 00-.8-1.1c-.3-.4-.7-.6-1.1-.8-.4-.2-1-.3-1.9-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.5a5.5 5.5 0 110 11 5.5 5.5 0 010-11zm0 9.1a3.6 3.6 0 100-7.2 3.6 3.6 0 000 7.2zm5.7-9.9a1.3 1.3 0 110-2.6 1.3 1.3 0 010 2.6z" />
+     </svg> <span>Instagram</span> </a>
+  </div>
+</section>
+  </main>
+  <Footer />
+</BaseLayout>
