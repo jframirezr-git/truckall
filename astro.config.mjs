@@ -1,10 +1,9 @@
-// @ts-check
+import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
 
-import tailwindcss from '@tailwindcss/vite';
-
-// https://astro.build/config
 export default defineConfig({
+  site: 'https://jframirezr-git.github.io/truckall',
+  base: '/truckall/',
   vite: {
     plugins: [tailwindcss()]
   }
