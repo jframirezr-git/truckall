@@ -1,34 +1,37 @@
-<section class="w-full bg-gradient-to-br from-blue-100 via-white to-blue-200">
-  <div class="w-full max-w-6xl mx-auto px-6 py-24 flex flex-col items-center text-center">
+<section
+  class="relative w-full bg-gradient-to-br from-blue-100 via-white to-blue-200 overflow-hidden"
+>
 
-    <!-- Texto principal -->
+  <!-- Puntos flotando -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="point animate-wander" style="top: 10%; left: 15%;"></div>
+    <div class="point animate-wander delay-1000" style="top: 40%; left: 70%;"></div>
+    <div class="point animate-wander delay-2000" style="top: 75%; left: 30%;"></div>
+    <div class="point animate-wander delay-3000" style="top: 20%; left: 85%;"></div>
+    <div class="point animate-wander delay-500" style="top: 60%; left: 10%;"></div>
+    <div class="point animate-wander delay-1500" style="top: 85%; left: 65%;"></div>
+  </div>
+
+  <div class="relative w-full max-w-6xl mx-auto px-6 py-24 flex flex-col items-center text-center">
     <div class="w-full space-y-6">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight drop-shadow-sm">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900">
         Acarreos y trasteos rápidos y confiables
       </h1>
 
       <p class="text-lg text-slate-700 max-w-2xl mx-auto">
-        Servicio profesional de transporte para muebles, electrodomésticos y objetos de cualquier tamaño.  
+        Servicio profesional de transporte para muebles, electrodomésticos y objetos de cualquier tamaño.
         Puntualidad, seguridad y confianza en cada traslado.
       </p>
 
-      <!-- Botones de acción -->
       <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4 w-full">
-        <a
-          href="#contacto"
-          class="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-lg font-semibold shadow-md w-full sm:w-auto"
-        >
+        <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 transition text-white px-6 py-3 rounded-lg font-semibold shadow-md">
           Solicitar presupuesto
         </a>
 
-        <a
-          href="#servicios"
-          class="px-6 py-3 rounded-lg border border-blue-300 hover:bg-blue-50 transition w-full sm:w-auto"
-        >
+        <a href="#servicios" class="px-6 py-3 rounded-lg border border-blue-300 hover:bg-blue-50 transition">
           Ver servicios
         </a>
       </div>
     </div>
-
   </div>
 </section>
